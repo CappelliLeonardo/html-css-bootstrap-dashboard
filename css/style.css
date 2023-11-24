@@ -1,0 +1,30 @@
+.debug header .container-fluid .row > *{
+    border: 1px dashed black;
+}
+
+.debug main .container-fluid .row > *{
+    border: 1px dashed black;
+}
+
+.row-height{
+    height: calc(100vh - 74px);
+}
+
+.ul-list-type-none{
+    list-style-type: none;
+}
+
+.ul-list-type-none.icon-list{
+    display: flex;
+    font-size: 1.5em;
+    align-items: bottom;
+}
+
+
+
+.ul-list-type-none li .dropdown button{
+    color: orange;
+    background-color: white;
+    border: none;
+}
+
