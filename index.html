@@ -90,17 +90,17 @@
                             <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
                                 <button type="button" class="btn">
                                   <i class="bi bi-house-door-fill"></i>
-                                  <span>Home</span>
+                                  <span class="d-lg-inline-block d-md-inline-block d-none">Home</span>
                                 </button>
 
                                 <button type="button" class="btn">
                                     <i class="bi bi-bar-chart-fill"></i>
-                                    <span>Stats</span>
+                                    <span class="d-lg-inline-block d-md-inline-block d-none">Stats</span>
                                 </button>
 
                                 <button type="button" class="btn">
                                     <i class="bi bi-reception-4"></i>
-                                    <span>Signals</span>
+                                    <span class="d-lg-inline-block d-md-inline-block d-none">Signals</span>
                                 </button>
                             </div>  
                         </div>
@@ -108,26 +108,26 @@
                         <div>
                             <button type="button" class="btn">
                                 <i class="bi bi-gear-fill"></i>
-                                <span>Admin</span>
+                                <span class="d-lg-inline-block d-md-inline-block d-none">Admin</span>
                             </button>
                         </div>
                     </div>
 
                     <div class="col overflow-y-auto row-height">
-                        <div class="row bg-warning text-white">
-                            <div class="col-6">
+                        <div class="row text-white align-middle">
+                            <div class="col-6 header-color py-2">
                                 <h3 class="d-inline-block">
                                     Boolean
                                 </h3>
-                                <span class="badge rounded-pill text-bg-primary">Piano Blaze</span>
+                                <span class="badge rounded-pill text-bg-my-pills">Piano Blaze</span>
                                 <br>
-                                <span class="badge rounded-pill text-bg-primary">3 app</span>
+                                <span class="badge rounded-pill text-bg-my-pills">3 app</span>
 
-                                <span class="badge rounded-pill text-bg-primary">Boolean mobile app</span>
-                                <span class="badge rounded-pill text-bg-primary">Boolean web app</span>
-                                <span class="badge rounded-pill text-bg-primary">Boolean blog app</span>
+                                <span class="badge rounded-pill text-bg-my-pills d-lg-inline-block d-md-inline-block d-none">Boolean mobile app</span>
+                                <span class="badge rounded-pill text-bg-my-pills d-lg-inline-block d-md-inline-block d-none">Boolean web app</span>
+                                <span class="badge rounded-pill text-bg-my-pills d-lg-inline-block d-md-inline-block d-none">Boolean blog app</span>
                             </div>
-                            <div class="col-3">
+                            <div class="col-3 header-color py-2">
                                 <p>
                                     Studenti online negli ultimi 30 minuti
                                 </p>
@@ -135,18 +135,83 @@
                                     125
                                 </h3>
                             </div>
-                            <div class="col-3">
+                            <div class="col-3 header-color text-end py-2">
                                 <span>Nuovo studente</span>
 
                                 <button class="btn border-white text-white mx-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-plus-square"></i></button>
     
-                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-width offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                                   <div class="offcanvas-header">
-                                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci Nuovo studente</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                   </div>
-                                  <div class="offcanvas-body">
-                                    ...
+                                    <div class="offcanvas-body">
+                                    
+                                    <form class="row g-3">
+                                        <div class="col-md-6">
+                                          <label for="inputEmail4" class="form-label">Nome</label>
+                                          <input type="email" class="form-control" id="inputEmail4" />
+                                        </div>
+                                        <div class="col-md-6">
+                                          <label for="inputEmail4" class="form-label">Cognome</label>
+                                          <input type="email" class="form-control" id="inputEmail4" />
+                                        </div>
+                                  
+                                        <div class="col-md-6">
+                                          <label for="inputEmail4" class="form-label">Email</label>
+                                          <div class="input-group">
+                                            <div class="input-group-text">@</div>
+                                            <input type="text" class="form-control" id="autoSizingInputGroup" />
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <label for="inputPassword4" class="form-label">Password</label>
+                                          <input type="password" class="form-control" id="inputPassword4" />
+                                        </div>
+                                        <div class="col-12">
+                                          <label for="inputAddress" class="form-label">Indirizzo</label>
+                                          <input type="text" class="form-control" id="inputAddress" />
+                                        </div>
+                                        <div class="col-5">
+                                          <label for="inputAddress2" class="form-label">Città</label>
+                                          <input type="text" class="form-control" id="inputAddress2" />
+                                        </div>
+                                        <div class="col-md-5">
+                                          <label for="inputState" class="form-label">Stato</label>
+                                          <select id="inputState" class="form-select">
+                                            <option selected="">Scegli...</option>
+                                            <option>...</option>
+                                          </select>
+                                        </div>
+
+                                        <div class="col-md-2">
+                                          <label for="inputZip" class="form-label">CAP</label>
+                                          <input type="text" class="form-control" id="inputZip" />
+                                        </div>
+
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                              <button class="btn btn-outline-secondary" type="button">Button</button>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+                                        </div>
+
+                                        <div class="col-12">
+                                          <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck" />
+                                            <label class="form-check-label" for="gridCheck">
+                                              Seleziona per proseguire
+                                            </label>
+                                          </div>
+                                        </div>
+                                        <div class="col-auto">
+                                          <button type="submit" class="btn btn-primary">Salva</button>
+                                        </div>
+                                        <div class="col-auto">
+                                          <button type="submit" class="btn btn-warning">Svuota</button>
+                                        </div>
+                                    </form>
+
                                   </div>
                                 </div>
                             
@@ -155,7 +220,7 @@
                             </div>
                         </div>
 
-                        <div class="row">
+                        <div class="row py-4">
                             <div class=" col-12 col-lg-8">
                                 <div class="row flex-column">
                                     <div class="col">
@@ -418,10 +483,8 @@
                                         </div>
                                     </div>  
                                     <div class="col">
-                                        <div class="card" style="width: 18rem;">
-                                            <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img"
-                                            aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice"
-                                            focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em"> ggg</text></svg>
+                                        <div class="card">
+                                            <img src="./img/stats.jpeg" alt="">
                                             <div class="card-body">
                                               <h5 class="card-title">Utenti Attivi</h5>
                                               <p class="card-text">

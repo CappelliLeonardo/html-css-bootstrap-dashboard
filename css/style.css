@@ -1,16 +1,22 @@
-.debug header .container-fluid .row > *{
-    border: 1px dashed black;
-}
 
-.debug main .container-fluid .row > *{
-    border: 1px dashed black;
-}
 
 #max-width-logo{
     max-width: 50px;
 }
 .row-height{
     height: calc(100vh - 84px);
+}
+
+/*
+    MAIN
+*/
+
+.header-color{
+    background: #4171E8;
+}
+
+.text-bg-my-pills{
+    background: #3661C6;
 }
 
 /* 
@@ -21,14 +27,21 @@
 }
 
 
+/*
+    MEDIA QUERY
+*/
+
 @media screen and (min-width: 992px) {
     .width-table-cell{
         width: 50%;
     }
-  }
+}
 
-
-
+@media screen and (max-width: 992px) {
+    .offcanvas-width.offcanvas.offcanvas-end{
+        width: auto;
+    }
+}
 
 .ul-list-type-none{
     list-style-type: none;
