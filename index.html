@@ -27,34 +27,32 @@
                         <div class="d-lg-inline-block d-md-inline-block d-none">
                             <img src="../html-css-bootstrap-dashboard/img/logo.svg" alt="">
                         </div>
-                        <!-- <div>
-                            <img src="../html-css-bootstrap-dashboard/img/mobile-logo.png" alt="">
-                        </div> -->
                     </div>
 
                     <div class="col">
 
                         <form class="row row-cols-lg-auto g-3 align-items-center">
-
                             <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
                             <div class="input-group">
                               <div class="input-group-text"> <i class="bi bi-search"></i></div>
                               <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Prova a cercare lezioni di Laravel">
                             </div>
+                        </form>
+
                     </div>
 
                     <div class="col-auto">
                         
                         <ul class="ul-list-type-none icon-list">
-                            <li>
+                            <li class="d-lg-inline-block d-md-inline-block d-none">
                                 <a href="http://"><i class="bi bi-list"></i></a>
                             </li>
 
-                            <li>
+                            <li class="d-lg-inline-block d-md-inline-block d-none">
                                 <a href="http://"><i class="bi bi-question-circle-fill"></i></a>
                             </li>
 
-                            <li>
+                            <li class="d-lg-inline-block d-md-inline-block d-none">
                                 <a href="http://"><i class="bi bi-three-dots-vertical"></i></a>
                             </li>
 
@@ -115,7 +113,7 @@
                         </div>
                     </div>
 
-                    <div class="col">
+                    <div class="col overflow-y-auto row-height">
                         <div class="row bg-warning text-white">
                             <div class="col-6">
                                 <h3 class="d-inline-block">
@@ -158,25 +156,287 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-8">
+                            <div class=" col-12 col-lg-8">
                                 <div class="row flex-column">
                                     <div class="col">
-                                        Prossime classi
+                                        <div class="card">
+                                            <h5 class="card-header">Prossime Classi</h5>
+                                            <div class="card-body">
+
+                                                <table class="table">
+                                                    <tbody>
+                                                        <tr class="text-center">
+                                                            <td scope="col" class="text-start">Nome</td>
+                                                            <td scope="col" class="d-none d-md-table-cell">Data d'inizio</td>
+                                                            <td scope="col" class="d-none d-md-table-cell" >ROI</td>
+                                                            <td scope="col">Stato</td>
+                                                            <td scope="col">Azioni</td>
+                                                        </tr>
+                                                        <tr class="text-center align-middle">
+                                                            <th scope="row" class="text-start width-table-cell">
+                                                                <div class="d-inline-block">
+                                                                    <img src="../html-css-bootstrap-dashboard/img/class-avatar.jpg" class="stats-logo" alt="">
+                                                                </div>
+                                                                Classe 75
+                                                            </th>
+                                                            <td class="d-none d-md-table-cell"> 15 Febbraio 2021</td>
+                                                            <td class="d-none d-md-table-cell">20%</td>
+                                                            <td><span class="badge rounded-pill text-bg-success">done</span></td>
+                                                            
+                                                            <td>
+                                                                <button type="button" class="btn btn-outline-secondary m-1">
+                                                                    <i class="bi bi-pencil-fill"></i>
+                                                                </button>
+                                                                <button type="button" class="btn btn-outline-secondary m-1">
+                                                                    <i class="bi bi-trash-fill"></i>
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+        
+                                                        <tr class="text-center align-middle">
+                                                            <th scope="row" class="text-start">
+                                                                <div class="d-inline-block">
+                                                                    <img src="../html-css-bootstrap-dashboard/img/class-avatar.jpg" class="stats-logo" alt="">
+                                                                </div>
+                                                                Classe 76
+                                                            </th>
+                                                            <td class="d-none d-md-table-cell"> 16 Febbraio 2021</td>
+                                                            <td class="d-none d-md-table-cell">20%</td>
+                                                            <td><span class="badge rounded-pill text-bg-success">done</span></td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-outline-secondary m-1">
+                                                                    <i class="bi bi-pencil-fill"></i>
+                                                                </button>
+                                                                <button type="button" class="btn btn-outline-secondary m-1">
+                                                                    <i class="bi bi-trash-fill"></i>
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+        
+                                                        <tr class="text-center align-middle">
+                                                            <th scope="row" class="text-start">
+                                                                <div class="d-inline-block">
+                                                                    <img src="../html-css-bootstrap-dashboard/img/class-avatar.jpg" class="stats-logo" alt="">
+                                                                </div>
+                                                                Classe 77
+                                                            </th>
+                                                            <td class="d-none d-md-table-cell"> 17 Febbraio 2021</td>
+                                                            <td class="d-none d-md-table-cell">20%</td>
+                                                            <td><span class="badge rounded-pill text-bg-warning">process</span></td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-outline-secondary m-1">
+                                                                    <i class="bi bi-pencil-fill"></i>
+                                                                </button>
+                                                                <button type="button" class="btn btn-outline-secondary m-1">
+                                                                    <i class="bi bi-trash-fill"></i>
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+        
+                                                        <tr class="text-center align-middle">
+                                                            <th scope="row" class="text-start">
+                                                                <div class="d-inline-block">
+                                                                    <img src="../html-css-bootstrap-dashboard/img/class-avatar.jpg" class="stats-logo" alt="">
+                                                                </div>
+                                                                Classe 78
+                                                            </th>
+                                                            <td class="d-none d-md-table-cell"> 18 Febbraio 2021</td>
+                                                            <td class="d-none d-md-table-cell">20%</td>
+                                                            <td><span class="badge rounded-pill text-bg-success">done</span></td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-outline-secondary m-1">
+                                                                    <i class="bi bi-pencil-fill"></i>
+                                                                </button>
+                                                                <button type="button" class="btn btn-outline-secondary m-1">
+                                                                    <i class="bi bi-trash-fill"></i>
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+        
+                                                        <tr class="text-center align-middle">
+                                                            <th scope="row" class="text-start">
+                                                                <div class="d-inline-block">
+                                                                    <img src="../html-css-bootstrap-dashboard/img/class-avatar.jpg" class="stats-logo" alt="">
+                                                                </div>
+                                                                Classe 79
+                                                            </th>
+                                                            <td class="d-none d-md-table-cell"> 19 Febbraio 2021</td>
+                                                            <td class="d-none d-md-table-cell">20%</td>
+                                                            <td><span class="badge rounded-pill text-bg-danger">failed</span></td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-outline-secondary m-1">
+                                                                    <i class="bi bi-pencil-fill"></i>
+                                                                </button>
+                                                                <button type="button" class="btn btn-outline-secondary m-1">
+                                                                    <i class="bi bi-trash-fill"></i>
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+        
+                                                        <tr class="text-center align-middle">
+                                                            <th scope="row" class="text-start">
+                                                                <div class="d-inline-block">
+                                                                    <img src="../html-css-bootstrap-dashboard/img/class-avatar.jpg" class="stats-logo" alt="">
+                                                                </div>
+                                                                Classe 80
+                                                            </th>
+                                                            <td class="d-none d-md-table-cell"> 20 Febbraio 2021</td>
+                                                            <td class="d-none d-md-table-cell">20%</td>
+                                                            <td><span class="badge rounded-pill text-bg-success">done</span></td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-outline-secondary m-1">
+                                                                    <i class="bi bi-pencil-fill"></i>
+                                                                </button>
+                                                                <button type="button" class="btn btn-outline-secondary m-1">
+                                                                    <i class="bi bi-trash-fill"></i>
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+        
+                                                        <tr class="text-center align-middle">
+                                                            <th scope="row" class="text-start">
+                                                                <div class="d-inline-block">
+                                                                    <img src="../html-css-bootstrap-dashboard/img/class-avatar.jpg" class="stats-logo" alt="">
+                                                                </div>
+                                                                Classe 81
+                                                            </th>
+                                                            <td class="d-none d-md-table-cell"> 21 Febbraio 2021</td>
+                                                            <td class="d-none d-md-table-cell">20%</td>
+                                                            <td><span class="badge rounded-pill text-bg-danger">failed</span></td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-outline-secondary m-1">
+                                                                    <i class="bi bi-pencil-fill"></i>
+                                                                </button>
+                                                                <button type="button" class="btn btn-outline-secondary m-1">
+                                                                    <i class="bi bi-trash-fill"></i>
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+        
+                                                        <tr class="text-center align-middle">
+                                                            <th scope="row" class="text-start">
+                                                                <div class="d-inline-block">
+                                                                    <img src="../html-css-bootstrap-dashboard/img/class-avatar.jpg" class="stats-logo" alt="">
+                                                                </div>
+                                                                Classe 82
+                                                            </th>
+                                                            <td class="d-none d-md-table-cell"> 22 Febbraio 2021</td>
+                                                            <td class="d-none d-md-table-cell">20%</td>
+                                                            <td><span class="badge rounded-pill text-bg-success">done</span></td>
+                                                            <td>
+                                                                <button type="button" class="btn btn-outline-secondary m-1">
+                                                                    <i class="bi bi-pencil-fill"></i>
+                                                                </button>
+                                                                <button type="button" class="btn btn-outline-secondary m-1">
+                                                                    <i class="bi bi-trash-fill"></i>
+                                                                </button>
+                                                            </td>
+                                                        </tr>
+                                                      
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col">
-                                        F.A.Q.
+                                        <div class="card">
+                                            <h5 class="card-header">F.A.Q.</h5>
+                                            <div class="card-body">
+                                              <div class="accordion accordion-flush" id="accordionFlushExample">
+                                                <div class="accordion-item">
+                                                  <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                      Come agiungere un nuovo studente?
+                                                    </button>
+                                                  </h2>
+                                                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample" style="">
+                                                    <div class="accordion-body">
+                                                      Clicca sul + in alto nella sezione blu
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                  <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                      Come posso accedere alle informaizoni del mio account ?
+                                                    </button>
+                                                  </h2>
+                                                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body">
+                                                      Clicca sull'icona della campanella
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                  <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                                      Posso usare questa dashboard da mobile?
+                                                    </button>
+                                                  </h2>
+                                                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body">
+                                                      Clicca sull'icona della campanella 
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                            </div>
+                                          </div>
+                                      
                                     </div>
 
                                 </div>
                             </div>
 
-                            <div class="col-4">
+                            <div class="col-12 col-lg-4 ">
                                 <div class="row flex-column">
                                     <div class="col">
-                                        ToDO
-                                    </div>
+                                        <div class="card">
+                                            <h5 class="card-header">To Do</h5>
+                                            <div class="card-body">
+                                              <ul class="list-group">
+                                                <li class="list-group-item">
+                                                  <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                                                  <label class="form-check-label" for="firstCheckbox">
+                                                    Kick Offnuove classi
+                                                  </label>
+                                                </li>
+                                                <li class="list-group-item">
+                                                  <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                                                  <label class="form-check-label" for="secondCheckbox">
+                                                    Lezione su bootstrap 5 in classe 75
+                                                  </label>
+                                                </li>
+                                                <li class="list-group-item">
+                                                  <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                                                  <label class="form-check-label" for="thirdCheckbox">
+                                                    Controllare username github studenti
+                                                  </label>
+                                                </li>
+                                              </ul>
+                                            </div>
+                                        </div>
+                                    </div>  
                                     <div class="col">
-                                        GRAFICO
+                                        <div class="card" style="width: 18rem;">
+                                            <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img"
+                                            aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice"
+                                            focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em"> ggg</text></svg>
+                                            <div class="card-body">
+                                              <h5 class="card-title">Utenti Attivi</h5>
+                                              <p class="card-text">
+                                                Lista degli utenti attivi negli ultimi tre mesi.
+                                              </p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                              <li class="list-group-item">Gennaio 1200</li>
+                                              <li class="list-group-item">Febbraio 800</li>
+                                              <li class="list-group-item">Marzo 1500</li>
+                                            </ul>
+                                            <div class="card-body">
+                                              <a href="#" class="card-link">Visualizza report approfondito</a>
+                                            </div>
+                                          </div>
                                     </div>
                                 </div>
                             </div>
