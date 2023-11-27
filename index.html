@@ -20,7 +20,11 @@
                 <div class="row p-3 align-items-center">
 
                     <div class="col-auto">
-                        <div>
+
+                        <div class="d-lg-none d-md-none">
+                            <img src="../html-css-bootstrap-dashboard/img/mobile-logo.png" alt="" id="max-width-logo">
+                        </div>
+                        <div class="d-lg-inline-block d-md-inline-block d-none">
                             <img src="../html-css-bootstrap-dashboard/img/logo.svg" alt="">
                         </div>
                         <!-- <div>
@@ -83,57 +87,98 @@
         <main>
             <div class="container-fluid">
                 <div class="row row-height">
-                    <div class="col-auto">
-                        <div>
-                            <ul class="ul-list-type-none">
-                                <li>
-                                    <a href="">
-                                        <span>
-                                            <i class="bi bi-house-door-fill"></i>
-                                        </span>
-                                        <span>
-                                            Home
-                                        </span>
-                                    </a>  
-                                </li>
+                    <div class="col-auto d-flex flex-column ">
+                        <div class="flex-grow-1">
+                            <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+                                <button type="button" class="btn">
+                                  <i class="bi bi-house-door-fill"></i>
+                                  <span>Home</span>
+                                </button>
 
-                                <li>
-                                    <span>
-                                        <i class="bi bi-house-door-fill"></i>
-                                    </span>
-                                    <span>
-                                        Home
-                                    </span>
-                                </li>
+                                <button type="button" class="btn">
+                                    <i class="bi bi-bar-chart-fill"></i>
+                                    <span>Stats</span>
+                                </button>
 
-                                <li>
-                                    <span>
-                                        <i class="bi bi-house-door-fill"></i>
-                                    </span>
-                                    <span>
-                                        Home
-                                    </span>
-                                </li>
-                            </ul>  
+                                <button type="button" class="btn">
+                                    <i class="bi bi-reception-4"></i>
+                                    <span>Signals</span>
+                                </button>
+                            </div>  
                         </div>
-                        <div> ASIDE BOTTOM
 
+                        <div>
+                            <button type="button" class="btn">
+                                <i class="bi bi-gear-fill"></i>
+                                <span>Admin</span>
+                            </button>
                         </div>
                     </div>
-                    <div class="col">MAIN
-                        <div class="row">
-                            <div class="col">
-                                colonna blu 
+
+                    <div class="col">
+                        <div class="row bg-warning text-white">
+                            <div class="col-6">
+                                <h3 class="d-inline-block">
+                                    Boolean
+                                </h3>
+                                <span class="badge rounded-pill text-bg-primary">Piano Blaze</span>
+                                <br>
+                                <span class="badge rounded-pill text-bg-primary">3 app</span>
+
+                                <span class="badge rounded-pill text-bg-primary">Boolean mobile app</span>
+                                <span class="badge rounded-pill text-bg-primary">Boolean web app</span>
+                                <span class="badge rounded-pill text-bg-primary">Boolean blog app</span>
+                            </div>
+                            <div class="col-3">
+                                <p>
+                                    Studenti online negli ultimi 30 minuti
+                                </p>
+                                <h3>
+                                    125
+                                </h3>
+                            </div>
+                            <div class="col-3">
+                                <span>Nuovo studente</span>
+
+                                <button class="btn border-white text-white mx-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-plus-square"></i></button>
+    
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                  <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                  </div>
+                                  <div class="offcanvas-body">
+                                    ...
+                                  </div>
+                                </div>
+                            
+                                    
+                            
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-8">
+                                <div class="row flex-column">
+                                    <div class="col">
+                                        Prossime classi
+                                    </div>
+                                    <div class="col">
+                                        F.A.Q.
+                                    </div>
 
+                                </div>
                             </div>
 
                             <div class="col-4">
-
+                                <div class="row flex-column">
+                                    <div class="col">
+                                        ToDO
+                                    </div>
+                                    <div class="col">
+                                        GRAFICO
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

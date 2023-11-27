@@ -6,8 +6,12 @@
     border: 1px dashed black;
 }
 
+#max-width-logo{
+    max-width: 50px;
+}
+
 .row-height{
-    height: calc(100vh - 74px);
+    height: calc(100vh - 84px);
 }
 
 .ul-list-type-none{
@@ -17,7 +21,7 @@
 .ul-list-type-none.icon-list{
     display: flex;
     font-size: 1.5em;
-    align-items: bottom;
+    margin-bottom: 0;
 }
 
 
