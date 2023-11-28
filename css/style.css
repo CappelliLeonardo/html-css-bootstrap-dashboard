@@ -14,8 +14,14 @@
 
 .bg-img{
     background-image: url("../img/sidebar-bg.png");
-    
+    background-color: #051E34;
 }
+
+.item-white{
+    color: white;
+}
+
+
 
 .header-color{
     background: #4171E8;
