@@ -11,6 +11,12 @@
     MAIN
 */
 
+
+.bg-img{
+    background-image: url("../img/sidebar-bg.png");
+    
+}
+
 .header-color{
     background: #4171E8;
 }
